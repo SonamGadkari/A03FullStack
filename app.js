@@ -42,12 +42,12 @@ app.get("/contact", function (req, res) {
 
 // 5 handle valid POST request (not required to fully work)
 app.post("/contact", function (req, res) {
-    var api_key = '0cab07dc3541a0d404472ffb689ad32f-4836d8f5-bde1d107';
+    var api_key = 'key-aca552955b6302a6116ceb23ae23fa60';
     var domain = 'sandboxa428a18d02b4418683ed4d585938a1e9.mailgun.org';
     var mailgun = require('mailgun-js')({ apiKey: api_key, domain: domain });
 
     var data = {
-        from: 'Sonam <postmaster@sandboxa428a18d02b4418683ed4d585938a1e9.mailgun.org>',
+        from: 'sonam <postmaster@sandboxa428a18d02b4418683ed4d585938a1e9.mailgun.org>',
         to: 'sonam.gadekari@gmail.com',
         subject: req.body.FirstName+" Sent you a message",
         html: "<b style='color:green'> Message: </b>"+req.body.Question
