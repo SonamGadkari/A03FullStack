@@ -65,15 +65,12 @@ font-size:20px;
 }
 .set-font
 {
-	font-size:22px;
+	font-size:26px;
 	color:white;
 	font-weight:bold;
-	 background: rgba(0, 0, 0, 0.5);
-     display:inline;
-     
-/*	background-color: rgba(76, 175, 80, 0.3);*/
-/*	background-color:#CD853F;*/
+        display:inline;    
 }
+
 .set-font-contact
 {
 	font-size:20px;
